@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
 <df-messenger
   location="us-central1"
   project-id="your-project-id"
@@ -7,14 +9,18 @@
   language-code="en"
   max-query-length="-1">
   <df-messenger-chat
-   chat-title="Meu ChatBot"> <!-- Adicionando título ao chat -->
+   chat-title="Agente Analista de Dados"> <!-- Adicionando título ao chat -->
   </df-messenger-chat>
 </df-messenger>
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
-    font-family: Google Sans;
+    font-family: 'Montserrat', sans-serif;
+
+    /* Cor e Estilo do Cabeçalho */
+    --df-messenger-titlebar-background: #333333; /* Cor da barra superior */
+    --df-messenger-titlebar-font-color: #FFFFFF; /* Cor do texto do cabeçalho */
     
     --df-messenger-font-color: #FFFFFF; /* Cor do texto */
     --df-messenger-chat-background: #1A1A1A; /* Cor de fundo do chat */
