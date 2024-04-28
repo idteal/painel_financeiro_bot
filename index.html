@@ -1,38 +1,34 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   location="us-central1"
-  project-id="idata-421415"
-  agent-id="b6524d85-ca07-4ec5-bfaf-055a5da39d72"
+  project-id="your-project-id"
+  agent-id="your-agent-id"
   language-code="en"
   max-query-length="-1">
   <df-messenger-chat
-   chat-title="">
+   chat-title="Agente Analista de Dados"> <!-- Adicionando título ao chat -->
   </df-messenger-chat>
 </df-messenger>
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
-    --df-messenger-font-color: #FFFFFF;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #1A1A1A;
-    --df-messenger-message-user-background: #5fdba7;
-    --df-messenger-message-bot-background: #66c4d7;
-    --df-messenger-chat-title-background: #333333;
-
-    /* Para preencher a tela inteira */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-
-    /* Redefinir tamanho da janela de chat e título */
-    --df-messenger-chat-height: calc(100vh - 20px); 
-    --df-messenger-chat-width: calc(100vw - 20px);
-    --df-messenger-bot-message: #000000; /* Cor da mensagem do bot */
-    --df-messenger-user-message: #0000FF; /* Cor da mensagem do usuário */
+    font-family: Google Sans;
+    --df-messenger-font-color: #FFFFFF; /* Cor do texto */
+    --df-messenger-chat-background: #1A1A1A; /* Cor de fundo do chat */
+    --df-messenger-message-user-background: #00FF00; /* Mensagens do usuário */
+    --df-messenger-message-bot-background: #00A0FF; /* Mensagens do bot */
+    --df-messenger-chat-title-background: #333333; /* Cor do título do chat */
+    
+    /* Alterar cor da barra de entrada de texto */
+    --df-messenger-input-box-background: #333333; /* Cor de fundo da caixa de entrada */
+    --df-messenger-input-font-color: #FFFFFF; /* Cor do texto na entrada */
+    
+    /* Layout e dimensões do chat */
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
   }
 </style>
